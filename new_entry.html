@@ -118,17 +118,21 @@
                                                                     <label>Select Area</label>
                                                                     <select class="form-control " data-live-search="true" tabindex="-1" aria-hidden="true" name="area" id="area">
                                                                         <option value="">Select</option>
-                                                                        <option value="UZ">Uzbekistan</option>
-                                                                        <option value="VU">Vanuatu</option>
-                                                                        <option value="VE">Venezuela, Bolivarian Republic of</option>
-                                                                        <option value="VN">Viet Nam</option>
-                                                                        <option value="VG">Virgin Islands, British</option>
-                                                                        <option value="VI">Virgin Islands, U.S.</option>
-                                                                        <option value="WF">Wallis and Futuna</option>
-                                                                        <option value="EH">Western Sahara</option>
-                                                                        <option value="YE">Yemen</option>
-                                                                        <option value="ZM">Zambia</option>
-                                                                        <option value="ZW">Zimbabwe</option>
+                                                                        <option value="1">பெரிய பள்ளிவாசல் வலது புறம்</option>
+                                                                        <option value="2">பெரிய பள்ளிவாசல் இடது புறம்</option>                                                                        
+                                                                        <option value="3">கோட்டானகர் தெரு</option>                                                                        
+                                                                        <option value="4">அலீம் பீடி தெரு</option>                                                                        
+                                                                        <option value="5">KGR Line</option>                                                                        
+                                                                        <option value="6">கொங்கு நகர்</option>                                                                                                                                                                                                                        
+                                                                        <option value="7">ராஜீவ் நகர் </option>                                                                        
+                                                                        <option value="8">மார்க்கெட் உள்புறம் </option>                                                                        
+                                                                        <option value="9">மார்க்கெட் ரோடு </option>                                                                        
+                                                                        <option value="10">வெங்கடாச்சலம் பிள்ளை பெரிய வீதி</option>                                                                        
+                                                                        <option value="11">வெங்கடாச்சலம் பிள்ளை சின்ன வீதி</option>                                                                        
+                                                                        <option value="12">ஆத்தோரம் வலதுபுறம் </option>                                                                        
+                                                                        <option value="13">ஆத்தோரம் இடதுபுறம் </option>                                                                        
+                                                                        <option value="14">கடை வீதி </option>                                                                        
+                                                                        <option value="15">பெரிய பள்ளி பின்புறம் </option>                                                                        
                                                                     </select>
                                                             
                                                         </div>
@@ -316,7 +320,8 @@ $("#get_position").on('click', function(e)
                     success: function(msg)
                     {                                           
                         alert(msg);
-                    },
+                        window.location.reload();
+                    }
                 });             
             });
 
