@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Material design icon fonts CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet">
+
+    <!-- dataTable CSS -->
+    <link href="assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+   
+    <!-- custom scrollbar CSS -->
+    <link href="assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+    <!-- Customized CSS -->
+    <link href="assets/css/purple.css" id="link" rel="stylesheet">
+    <script src="cordova.js"></script>
+    <title>Masjid Cencus</title>
+</head>
+
+<body class="h-100">
+    <div class="loader">
+        <div>
+            <div class="loader-animation">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <br>
+            <h2 class="mt-4"><span class="font-weight-light">Masjid</span> Census</h2>
+            <p class="text-mute">Loading...</p>
+        </div>
+    </div>
+    <div class="wrapper">        
+        <div class="content h-100 d-flex flex-column w-100">
+            <header class="header fixed-top">
+                <!-- Fixed navbar -->
+                <nav class="container-fluid">
+                    <div class="row">
+                        <div class="col-auto align-self-center">
+                            <div class="row h-100">
+                                <div class="col-auto">
+                                    <img src="img/masjid.png" width="30px" height="30px">
+                                </div>
+                                <div class="col self-align-center">
+                                    <p class="btn btn-sm btn-link template-primary " >
+                                        Masjid Census
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center align-self-center px-0 ">
+                        </div>
+                    </div>
+                </nav>
+            </header>                      
+            <!-- Begin page content -->
+            <main class="flex-shrink-0">
+                <div class="container-fluid" id="main-container">                                                         
+                    <div class="row">
+                        <div class="container">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body">
+                                    <table class="responsive table table-striped border" id="dataTables-example">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Mobile</th>
+                                                <th>Street</th>                                                                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd">                                                
+                                                <td>infoatmaxartkiller.in</td>
+                                                <td>+91 000 000 0000</td>
+                                                <td class="center">40</td>                                                
+                                            </tr>                                            
+                                        </tbody>
+                                    </table>
+                                    <!-- /.table-responsive -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </main>
+
+            <footer class="footer mt-auto">
+                <div class="container text-center">
+                    <p>Copyright Mubarak.</p>                   
+                </div>
+            </footer>
+        </div>        
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    
+    <!-- custom scrollbar -->
+    <script src="assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- DataTable jquery file -->
+    <script src="assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Template main js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- page specific script -->
+    <script>
+        'user strict'
+        $(document).ready(function() {
+            /* data Table */
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
+        });
+
+    </script>
+
+</body>
+</html>
