@@ -92,7 +92,7 @@
                     <div class="row">
                         <div class="container top-60">
                                 <div class="card shadow-sm border-0 mb-4">
-                                    <form method="post" class="j-forms" id="forms">
+                                    <form method="POST" class="j-forms" id="forms">
                                         <div class="card-body">
                                             <div class="row justify-content-center">
                                                 <div class="col-md-10 mx-auto">
@@ -301,14 +301,16 @@ $("#get_position").on('click', function(e)
     }
 });
  
-            $("#forms").on('submit', function()
+            $("#forms").on('submit', function(event)
             {                                 
-                var data = $(this).serialize();                     
+                var data = $(this).serialize();     
+                event.preventDefault();                
                 $.ajax({
                     type: 'POST',
                     url: 'http://coderaavana.in/mubarak/save_cust.php',
                     data: data,
                     contentType: 'application/json',                    
+                    crossDomain: true,
                     cache: false,
                     processData:false,
                     success: function(msg)
