@@ -290,9 +290,7 @@ $("#get_position").on('click', function(e)
 
     function onSuccess(position) {
         lati = position.coords.latitude;
-        long = position.coords.longitude;
-        alert(lati);
-        alert(long);
+        long = position.coords.longitude;        
         $("#latitude").val(lati);
         $("#longitude").val(long);
     }
