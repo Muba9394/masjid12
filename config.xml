@@ -28,9 +28,5 @@
     <feature name="Geolocation">
         <param name="android-package" value="org.apache.cordova.GeoBroker" />
     </feature>
-    <platform name="android">
-        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
-            <application android:usesCleartextTraffic="true" />
-        </edit-config>
-    </platform>
+    
 </widget>
