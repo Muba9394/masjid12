@@ -302,12 +302,13 @@ $("#get_position").on('click', function(e)
 });
  
             $("#forms").on('submit', function()
-            {                                                      
+            {                                 
+                var data = $(this).serialize();                     
                 $.ajax({
                     type: 'POST',
                     url: 'http://coderaavana.in/mubarak/save_cust.php',
-                    data: new FormData(this),
-                    contentType: false,
+                    data: data,
+                    contentType: 'application/json',                    
                     cache: false,
                     processData:false,
                     success: function(msg)
