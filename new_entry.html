@@ -224,11 +224,11 @@
                                                                 </div>
                                                                 <div class=" col-md-6">
                                                                     <label>Latitude</label>
-                                                                    <input type="number" class="form-control" name="latitude" id="latitude" disabled="">
+                                                                    <input type="number" class="form-control" name="latitude" id="latitude" readonly="">
                                                                 </div>
                                                                 <div class=" col-md-6">
                                                                     <label>Longitude</label>
-                                                                    <input type="number" class="form-control" name="longitude" id="longitude" disabled="">
+                                                                    <input type="number" class="form-control" name="longitude" id="longitude" readonly="">
                                                                 </div>
                                                         </div>        
                                                     <br>
@@ -309,7 +309,7 @@ $("#get_position").on('click', function(e)
                     type: 'POST',
                     url: 'http://coderaavana.in/mubarak/save_cust.php',
                     data: data,
-                    contentType: 'application/json',                    
+                    //contentType: 'application/json',                    
                     crossDomain: true,
                     cache: false,
                     processData:false,
