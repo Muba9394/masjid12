@@ -301,9 +301,8 @@ $("#get_position").on('click', function(e)
     }
 });
  
-            $("#forms").on('submit', function(e)
-            {                                      
-                e.preventDefault();
+            $("#forms").on('submit', function()
+            {                                                      
                 $.ajax({
                     type: 'POST',
                     url: 'http://coderaavana.in/mubarak/save_cust.php',
