@@ -291,6 +291,8 @@ $("#get_position").on('click', function(e)
     function onSuccess(position) {
         lati = position.coords.latitude;
         long = position.coords.longitude;
+        alert(lati);
+        alert(long);
         $("#latitude").val(lati);
         $("#longitude").val(long);
     }
@@ -306,7 +308,7 @@ $("#get_position").on('click', function(e)
                 e.preventDefault();
                 $.ajax({
                     type: 'POST',
-                    url: 'http://localhost/masjid/save_cust.php',
+                    url: 'http://coderaavana.in/mubarak/save_cust.php',
                     data: new FormData(this),
                     contentType: false,
                     cache: false,
